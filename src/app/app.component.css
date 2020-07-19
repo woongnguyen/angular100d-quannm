@@ -1,0 +1,12 @@
+.box{
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border:solid 1px #000;
+}
+.red-border{
+  border:solid 1px red
+}
+.bg-yellow{
+  background: yellow;
+}

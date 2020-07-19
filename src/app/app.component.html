@@ -1,1 +1,22 @@
 
+<h1>{{name}}</h1>
+
+<p>staring edit to see magic</p>
+
+<button (click)="isDanger = !isDanger">is Danger</button>
+
+<button (click)="isWarning = !isWarning">is Warning</button>
+
+<!-- class.ten-class
+class.array  [class]="'red'"
+class.object {[ten-class: string]:boolean}
+class.variable [class]="classes" -->
+
+<div class="box" [class.red-border]="isDanger" [class.bg-yellow]="isWarning"></div>
+
+<!-- [style.temStyle ]
+[style.ten-style]
+[style.tenStyle.unit]
+[style]="object"
+[style.css-variable] -->
+<p [style.--text-color]="isDanger ? 'red' : 'blue' " [style]="{color: 'var(--text-color)', backgroundColor: 'yellow', fontSize: '2rem'}">lorem isum dolor sit amet</p>
